@@ -1,0 +1,14 @@
+tableInfoList:
+   - tableMeta:
+       connector: HIVE
+       dbName: UAT1
+       tableName: table1
+     columnSelections: "*"
+
+   - tableMeta:
+       connector: HIVE
+       dbName: UAT2
+       tableName: table2
+
+joiningCondition: table1.joinClm1 ==  table2.joinClm1 && table1.joinClm2 ==  table2.joinClm3
+joinType: LEFT_OUTER
